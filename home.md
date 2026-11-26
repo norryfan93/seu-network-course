@@ -5,10 +5,10 @@ nav_order: 1
 permalink: /
 seo:
   type: Course
-  name: 复杂网络分析与图机器学习
+  name: 网络数据分析
 ---
 
-# 复杂网络分析与图机器学习
+# 网络数据分析
 
 <section class="seu-course-hero" aria-label="东南大学课程介绍">
   <div class="seu-course-brand">
@@ -19,7 +19,7 @@ seo:
   </div>
   <div class="seu-course-hero-main">
     <div>
-      <p class="seu-course-eyebrow">NETWORK ANALYSIS · GRAPH MACHINE LEARNING</p>
+      <p class="seu-course-eyebrow">NETWORK DATA ANALYSIS · BUSINESS APPLICATIONS</p>
       <p class="seu-course-summary">面向经管学生的网络数据分析课程<br>从商业关系出发，理解网络结构与智能预测。</p>
       <div class="seu-course-pills"><span>16 周课程</span><span>8 次集中实验</span><span>Python 实践</span></div>
     </div>

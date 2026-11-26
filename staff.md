@@ -12,7 +12,7 @@ permalink: /staff/
 <article class="instructor-card">
   <figure class="instructor-photo-frame">
     <a class="instructor-photo-full" href="{{ '/assets/images/instructor-fan-yifan-portrait.svg' | relative_url }}" aria-label="打开完整照片" title="点击查看完整照片">
-      <img src="{{ '/assets/images/instructor-fan-yifan-portrait.svg' | relative_url }}" alt="樊一凡教师个人照片">
+      <img src="{{ '/assets/images/instructor-fan-yifan.jpg' | relative_url }}" alt="樊一凡教师个人照片">
     </a>
     <figcaption>授课教师 · {{ site.data.course.unit }}</figcaption>
   </figure>
