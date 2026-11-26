@@ -53,9 +53,9 @@ a:hover { color: #003f30; }
 .seu-course-motto span { color: #647268; font-size: .68rem; letter-spacing: .08em; white-space: nowrap; }
 .seu-course-hall { display: block; width: calc(100% + 3.1rem); height: auto; margin: .15rem -1.55rem 0; opacity: .78; }
 .instructor-card { display: grid; grid-template-columns: minmax(190px, 250px) minmax(0, 1fr); gap: 1.5rem; align-items: center; margin: 1.2rem 0 1.5rem; padding: 1.15rem; border: 1px solid #dce4dd; border-radius: 16px; background: linear-gradient(135deg, #f8faf8, #fffdf7); box-shadow: 0 10px 28px rgba(32, 53, 40, .06); }
-.instructor-photo-frame { position: relative; overflow: hidden; aspect-ratio: 4 / 5; margin: 0; border-radius: 11px; background: #e7e3d8; }
-.instructor-photo-frame img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: center bottom; transform: scale(1.8); transform-origin: center bottom; }
-.instructor-photo-frame figcaption { position: absolute; right: 0; bottom: 0; left: 0; padding: .55rem .7rem; background: linear-gradient(transparent, rgba(16, 27, 20, .76)); color: white; font-size: .76rem; }
+.instructor-photo-frame { overflow: hidden; margin: 0; border-radius: 11px; background: #e7e3d8; }
+.instructor-photo-frame img { display: block; width: 100%; height: auto; }
+.instructor-photo-frame figcaption { padding: .45rem .15rem 0; color: #52675a; font-size: .76rem; text-align: center; }
 .instructor-details { padding: .35rem .35rem .35rem 0; }
 .instructor-details h3 { margin: 0 0 .35rem; color: #19392f; font-size: 1.55rem; }
 .instructor-details h3 span { margin-left: .35rem; color: #68756d; font-size: .92rem; font-weight: 500; }
@@ -82,6 +82,7 @@ a:hover { color: #003f30; }
 [data-theme="dark"] .seu-course-motto img { filter: invert(1); }
 [data-theme="dark"] .seu-course-hall { filter: brightness(0) invert(1); opacity: .55; }
 [data-theme="dark"] .instructor-details h3 span { color: #b2c2b8; }
+[data-theme="dark"] .instructor-photo-frame figcaption { color: #c1d2c7; }
 [data-theme="dark"] .instructor-homepage { background: #2b4335; color: #bde1c7; }
 @media (max-width: 700px) {
   .seu-course-hero { padding: 1rem 1rem 0; }
@@ -106,7 +107,7 @@ a:hover { color: #003f30; }
   .course-meta-table th { width: 34%; }
   .course-figure { margin-left: 0; margin-right: 0; }
   .instructor-card { grid-template-columns: minmax(0, 1fr); }
-  .instructor-photo-frame { width: 100%; max-width: 260px; aspect-ratio: 4 / 5; margin: 0 auto; }
+  .instructor-photo-frame { width: 100%; max-width: 360px; margin: 0 auto; }
   .instructor-details { min-width: 0; padding: .2rem .1rem; }
   .instructor-details p { overflow-wrap: anywhere; }
   .instructor-homepage { max-width: 100%; flex-wrap: wrap; }
