@@ -40,7 +40,7 @@ a:hover { color: #003f30; }
   box-shadow: 0 12px 32px rgba(34, 57, 43, .07);
 }
 .seu-course-brand { display: flex; align-items: center; gap: 1rem; }
-.seu-course-brand a { display: inline-flex; line-height: 0; }
+.seu-course-brand a { display: inline-flex; padding: .42rem .55rem; border-radius: 8px; background: #fff; box-shadow: 0 2px 9px rgba(24, 43, 30, .09); line-height: 0; }
 .seu-course-brand img { display: block; width: clamp(220px, 34vw, 310px); height: auto; }
 .seu-course-brand span { border-left: 1px solid #cbd7cb; padding-left: 1rem; color: #506557; font-size: .84rem; line-height: 1.55; letter-spacing: .03em; }
 .seu-course-hero-main { display: grid; grid-template-columns: minmax(0, 1fr) 165px; align-items: center; gap: 1.25rem; padding: 1.45rem 0 1.2rem; }
