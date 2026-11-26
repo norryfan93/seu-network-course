@@ -28,4 +28,3 @@ permalink: /staff/
   </div>
 </article>
 
-<p class="license-note">教师照片由授课教师提供；个人主页、职称与研究方向以东南大学经济管理学院教师主页为准。</p>
