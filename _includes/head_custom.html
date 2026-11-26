@@ -1,0 +1,13 @@
+  <!-- Use this to add global CSS/JS utitlties. -->
+<script>
+  // Quick-set theme to prevent flashing
+  const theme = localStorage.getItem('jtd-theme') || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+  document.documentElement.setAttribute('data-theme', theme);
+{%- unless site.hide_sidebar_toggle == true %}
+  // Hide the sidebar right away if the student collapsed it on an earlier page.
+  if (localStorage.getItem('sidebar-collapsed') === 'true') document.documentElement.classList.add('sidebar-collapsed');
+{%- endunless %}
+</script>
+
+  <script>window.courseSiteBaseurl = {{ site.baseurl | jsonify }};</script>
+  <script src="{{ 'assets/js/search_cjk.js' | relative_url }}"></script>

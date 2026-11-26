@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 360" role="img" aria-labelledby="title desc">
+<title id="title">经管关系网络示意</title><desc id="desc">三个相互连接的社群，由节点和关系边构成。</desc>
+<rect width="840" height="360" fill="#fff"/>
+<g stroke="#91aaa0" stroke-width="2" fill="none">
+<path d="M120 178L185 95L258 150L205 245L120 178M185 95L205 245M258 150L120 178"/>
+<path d="M258 150L345 115L403 180L337 248L258 150M345 115L337 248M403 180L258 150"/>
+<path d="M403 180L498 98L568 154L528 250L403 180M498 98L528 250M568 154L403 180"/>
+<path d="M568 154L661 105L734 174L680 248L568 154M661 105L680 248"/>
+<path d="M205 245L337 248M403 180L528 250M568 154L661 105"/>
+</g><g fill="#00543D">
+<circle cx="120" cy="178" r="10"/><circle cx="185" cy="95" r="13"/><circle cx="258" cy="150" r="17"/><circle cx="205" cy="245" r="9"/>
+<circle cx="345" cy="115" r="10"/><circle cx="403" cy="180" r="18"/><circle cx="337" cy="248" r="11"/>
+<circle cx="498" cy="98" r="11"/><circle cx="568" cy="154" r="16"/><circle cx="528" cy="250" r="9"/>
+<circle cx="661" cy="105" r="13"/><circle cx="734" cy="174" r="10"/><circle cx="680" cy="248" r="12"/>
+</g><g fill="#b8d3c7">
+<circle cx="153" cy="136" r="6"/><circle cx="228" cy="198" r="6"/><circle cx="300" cy="183" r="6"/><circle cx="372" cy="147" r="6"/>
+<circle cx="455" cy="137" r="6"/><circle cx="548" cy="205" r="6"/><circle cx="624" cy="144" r="6"/><circle cx="706" cy="211" r="6"/>
+</g><g fill="#52625b" font-family="Arial,sans-serif" font-size="15"><text x="120" y="320">关系</text><text x="382" y="320">节点</text><text x="650" y="320">社群结构</text></g></svg>

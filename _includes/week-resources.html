@@ -1,0 +1,11 @@
+{%- assign resource_set = site.data.resources.materials[include.key] -%}
+<ul class="resource-list">
+<li>{% include resource-link.html label="Slides 课件" resource=resource_set.slides %}</li>
+<li>{% include resource-link.html label="Notes 讲义" resource=resource_set.notes %}</li>
+<li>{% include resource-link.html label="Code 示例代码" resource=resource_set.code %}</li>
+{%- if include.lab -%}
+<li>{% include resource-link.html label="Instructions 实验指导书" resource=resource_set.lab_instructions %}</li>
+<li>{% include resource-link.html label="Notebook 实验代码" resource=resource_set.notebook %}</li>
+<li>{% include resource-link.html label="Dataset 实验数据" resource=resource_set.dataset %}</li>
+{%- endif -%}
+</ul>

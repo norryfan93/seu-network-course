@@ -1,0 +1,442 @@
+textbooks:
+- title: Albert-László Barabási, Network Science
+  url: https://networksciencebook.com/
+  note: 开放在线教材，作为网络科学概念参考。
+- title: David Easley & Jon Kleinberg, Networks, Crowds, and Markets
+  url: https://www.cs.cornell.edu/home/kleinber/networks-book/
+  note: 在线教材，涵盖网络、扩散与市场等主题。
+- title: William L. Hamilton, Graph Representation Learning
+  url: https://www.cs.mcgill.ca/~wlh/grl_book/
+  note: 图表示学习参考书；课程只选取直观内容。
+courses:
+- title: 'Stanford CS224W: Machine Learning with Graphs'
+  url: https://web.stanford.edu/class/cs224w/
+  note: 参考课程主题、讲义组织与图机器学习内容。
+- title: Stanford CS224W Fall 2025
+  url: https://snap.stanford.edu/class/cs224w-2025/
+  note: 公开课程版本及课程材料入口。
+readings:
+- id: network-science-intro
+  title: Albert-László Barabási, Network Science：Introduction
+  kind: 建议阅读
+  url: https://networksciencebook.com/
+  week_label: 第 1 周
+  detail: 开放教材，先建立网络科学的问题意识。
+- id: network-basics
+  title: Network Science：网络基本概念与测量
+  kind: 建议阅读
+  url: https://networksciencebook.com/
+  week_label: 第 2 周
+  detail: 结合节点、边、路径和聚类概念阅读。
+- id: watts-strogatz
+  title: Watts & Strogatz (1998), Collective dynamics of small-world networks
+  kind: 拓展论文
+  url: https://doi.org/10.1038/30918
+  week_label: 第 3 周
+  detail: 'Nature 393, 440–442. DOI: 10.1038/30918。'
+- id: barabasi-albert
+  title: Barabási & Albert (1999), Emergence of Scaling in Random Networks
+  kind: 拓展论文
+  url: https://doi.org/10.1126/science.286.5439.509
+  week_label: 第 3 周
+  detail: 'Science 286(5439), 509–512. DOI: 10.1126/science.286.5439.509。'
+- id: network-models
+  title: Network Science：随机网络与无标度网络相关章节
+  kind: 建议阅读
+  url: https://networksciencebook.com/
+  week_label: 第 3 周
+  detail: 优先理解生成机制与结构差异，数学细节选读。
+- id: centrality
+  title: Easley & Kleinberg, Networks, Crowds, and Markets：网络结构与中心性
+  kind: 建议阅读
+  url: https://www.cs.cornell.edu/home/kleinber/networks-book/
+  week_label: 第 4 周
+  detail: 从路径、连接和网络位置的商业含义切入。
+- id: community
+  title: Blondel et al. (2008), Fast unfolding of communities in large networks
+  kind: 拓展论文
+  url: https://doi.org/10.1088/1742-5468/2008/10/P10008
+  week_label: 第 5 周
+  detail: 'J. Stat. Mech. P10008. DOI: 10.1088/1742-5468/2008/10/P10008。'
+- id: louvain
+  title: NetworkX：Louvain 社区发现接口说明
+  kind: 工具说明
+  url: https://networkx.org/documentation/stable/reference/algorithms/generated/networkx.algorithms.community.louvain.louvain_communities.html
+  week_label: 第 5 周
+  detail: 查看输入图、分辨率参数与返回值。
+- id: diffusion
+  title: Networks, Crowds, and Markets：信息扩散相关章节
+  kind: 建议阅读
+  url: https://www.cs.cornell.edu/home/kleinber/networks-book/
+  week_label: 第 6 周
+  detail: 关注扩散情境和行为假设。
+- id: link-prediction
+  title: Liben-Nowell & Kleinberg (2007), The Link-Prediction Problem for Social Networks
+  kind: 拓展论文
+  url: https://doi.org/10.1002/asi.20591
+  week_label: 第 7—8 周
+  detail: 'JASIST 58(7), 1019–1031. DOI: 10.1002/asi.20591。'
+- id: link-tools
+  title: NetworkX：链路预测指标接口说明
+  kind: 工具说明
+  url: https://networkx.org/documentation/stable/reference/algorithms/link_prediction.html
+  week_label: 第 7 周
+  detail: 共同邻居、Jaccard 和 Adamic–Adar 的接口。
+- id: deepwalk
+  title: 'Perozzi, Al-Rfou & Skiena (2014), DeepWalk: Online Learning of Social Representations'
+  kind: 拓展论文
+  url: https://doi.org/10.1145/2623330.2623732
+  week_label: 第 9 周
+  detail: 'KDD 2014, 701–710. DOI: 10.1145/2623330.2623732。'
+- id: node2vec
+  title: 'Grover & Leskovec (2016), node2vec: Scalable Feature Learning for Networks'
+  kind: 拓展论文
+  url: https://doi.org/10.1145/2939672.2939754
+  week_label: 第 9 周
+  detail: 'KDD 2016, 855–864. DOI: 10.1145/2939672.2939754。'
+- id: graph-learning
+  title: Stanford CS224W：图表示学习相关课程材料
+  kind: 建议阅读
+  url: https://web.stanford.edu/class/cs224w/
+  week_label: 第 9—10 周
+  detail: 选读课程介绍与相关主题材料。
+- id: gcn
+  title: Kipf & Welling (2017), Semi-Supervised Classification with Graph Convolutional Networks
+  kind: 拓展论文
+  url: https://openreview.net/forum?id=SJU4ayYgl
+  week_label: 第 10 周
+  detail: ICLR 2017。建议读摘要、图示和实验设置。
+- id: graphsage
+  title: Hamilton, Ying & Leskovec (2017), Inductive Representation Learning on Large Graphs
+  kind: 拓展论文
+  url: https://proceedings.neurips.cc/paper/2017/hash/5dd9db5e033da9c6fb5ba83c7a7ebea9-Abstract.html
+  week_label: 第 11 周
+  detail: NeurIPS 2017, 1024–1034。
+- id: gat
+  title: Veličković et al. (2018), Graph Attention Networks
+  kind: 拓展论文
+  url: https://openreview.net/forum?id=rJXMpikCZ
+  week_label: 第 11 周
+  detail: ICLR 2018。关注邻居加权聚合的直觉。
+- id: evaluation
+  title: Scikit-learn：模型评估指标与分类报告
+  kind: 工具说明
+  url: https://scikit-learn.org/stable/modules/model_evaluation.html
+  week_label: 第 12 周
+  detail: 关注指标定义、类别不平衡和评价目标。
+- id: knowledge-graphs
+  title: Bordes et al. (2013), Translating Embeddings for Modeling Multi-relational Data
+  kind: 拓展论文
+  url: https://proceedings.neurips.cc/paper/2013/hash/1cecc7a77928ca8133fa24680a88d2f9-Abstract.html
+  week_label: 第 13 周
+  detail: NeurIPS 2013, 2787–2795。仅作概念拓展。
+- id: lightgcn
+  title: 'He et al. (2020), LightGCN: Simplifying and Powering Graph Convolution Network for Recommendation'
+  kind: 拓展论文
+  url: https://doi.org/10.1145/3397271.3401063
+  week_label: 第 14 周
+  detail: 'SIGIR 2020. DOI: 10.1145/3397271.3401063。'
+- id: project-guide
+  title: Stanford CS224W Fall 2025：图学习主题材料
+  kind: 建议阅读
+  url: https://snap.stanford.edu/class/cs224w-2025/
+  week_label: 第 16 周
+  detail: 按项目问题选读相应主题。
+tools:
+- name: NetworkX
+  url: https://networkx.org/
+  use: 网络构建、经典指标、社区与链路预测。
+- name: Pandas
+  url: https://pandas.pydata.org/
+  use: 边表、节点属性与行为数据处理。
+- name: Scikit-learn
+  url: https://scikit-learn.org/
+  use: 分类基线与评估指标。
+- name: PyTorch
+  url: https://pytorch.org/
+  use: 图神经网络实验的张量框架。
+- name: PyTorch Geometric
+  url: https://pytorch-geometric.readthedocs.io/
+  use: GCN、GraphSAGE 等数据和模型接口。
+- name: Matplotlib
+  url: https://matplotlib.org/
+  use: 网络统计图和实验曲线。
+- name: Jupyter
+  url: https://jupyter.org/
+  use: Notebook 实验环境。
+- name: Gephi
+  url: https://gephi.org/
+  use: 可选交互式网络可视化工具。
+datasets:
+- id: email-eu-core
+  name: Email-Eu-core
+  type: 组织邮件网络
+  format: email-Eu-core.txt.gz 是发送者和接收者组成的边表；另有 email-Eu-core-department-labels.txt.gz，格式为节点编号和部门编号。
+  use: 网络构建、组织沟通与结构分析
+  url: https://snap.stanford.edu/data/email-Eu-core.html
+  caution: 下载前阅读 SNAP 页面说明；课程站不托管或再分发数据。
+- id: wiki-vote
+  name: Wiki-Vote
+  type: 用户投票网络
+  format: Wiki-Vote.txt.gz 是有向边表，列表示 FromNodeId 与 ToNodeId，表示用户 i 投票给用户 j。
+  use: 网络排名与中心性比较
+  url: https://snap.stanford.edu/data/wiki-Vote.html
+  caution: 分析前解释边方向；使用与再分发遵循 SNAP 页面条款。
+- id: college-msg
+  name: CollegeMsg
+  type: 带时间戳的消息网络
+  format: CollegeMsg.txt.gz 每行含 SRC、DST、UNIXTS；边 (u,v,t) 表示用户 u 在时间 t 向用户 v 发送私信，时间戳为 Unix 秒。
+  use: 信息传播、时间切分与链路预测
+  url: https://snap.stanford.edu/data/CollegeMsg.html
+  caution: 保留时间顺序，不识别真实身份；遵循 SNAP 页面说明。
+- id: karate-club
+  name: Karate Club
+  type: 小型社交网络
+  format: NetworkX 内置图数据。
+  use: 社区发现、中心性与传播演示
+  url: https://networkx.org/documentation/stable/reference/generated/networkx.generators.social.karate_club_graph.html
+  caution: 经典小型教学网络，不能代表现实商业网络的全部复杂性。
+- id: amazon-computers
+  name: Amazon Computers
+  type: 商品共购图
+  format: PyTorch Geometric 数据集对象，含图连接、节点特征和类别标签。
+  use: 节点嵌入、商品分类与 GNN 比较
+  url: https://pytorch-geometric.readthedocs.io/en/latest/generated/torch_geometric.datasets.Amazon.html
+  caution: PyG 文档说明节点表示商品、边表示经常被一起购买，节点特征来自商品评论词袋，标签为商品类别。使用前仍应核对上游数据许可；课程站不分发数据。
+- id: movielens-100k
+  name: MovieLens 100K
+  type: 用户—电影评分
+  format: GroupLens 归档包，含评分及用户、电影字段文件。
+  use: 二部图、协同过滤和推荐评估
+  url: https://grouplens.org/datasets/movielens/100k/
+  caution: GroupLens 要求查看数据包 README；未获另行许可不得公开再分发，商业或营收用途需先取得许可。课程站仅提供官方来源链接。
+- id: elliptic
+  name: Elliptic Bitcoin
+  type: 区块链交易图
+  format: Kaggle 页面提供交易特征、类别与关系数据包。
+  use: 金融交易网络与异常风险识别
+  url: https://www.kaggle.com/datasets/ellipticco/elliptic-data-set
+  caution: Kaggle 页面列明 CC BY-NC-ND 4.0：需署名、限非商业使用，不得分享改编材料。不要在仓库中分发原始或改编数据；下载时再次核对许可。研究：https://arxiv.org/abs/1908.02591。
+- id: olist
+  name: Olist Brazilian E-Commerce
+  type: 电商关系型交易数据
+  format: Kaggle 页面提供订单、商品、客户、卖家等 CSV 表。
+  use: 从交易表构建客户、商品或卖家网络
+  url: https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce
+  caution: Kaggle 页面列明 CC BY-NC-SA 4.0：需署名、限非商业使用，并按相同许可分享改编内容；使用时保留来源记录并核对当前许可。
+materials:
+  week01:
+    slides:
+      status: pending
+    notes:
+      status: pending
+    code:
+      status: pending
+    lab_instructions:
+      status: pending
+    notebook:
+      status: pending
+    dataset:
+      status: pending
+  week02:
+    slides:
+      status: pending
+    notes:
+      status: pending
+    code:
+      status: pending
+    lab_instructions:
+      status: pending
+    notebook:
+      status: pending
+    dataset:
+      status: published
+      url: https://snap.stanford.edu/data/email-Eu-core.html
+  week03:
+    slides:
+      status: pending
+    notes:
+      status: pending
+    code:
+      status: pending
+    lab_instructions:
+      status: pending
+    notebook:
+      status: pending
+    dataset:
+      status: pending
+  week04:
+    slides:
+      status: pending
+    notes:
+      status: pending
+    code:
+      status: pending
+    lab_instructions:
+      status: pending
+    notebook:
+      status: pending
+    dataset:
+      status: published
+      url: https://snap.stanford.edu/data/wiki-Vote.html
+  week05:
+    slides:
+      status: pending
+    notes:
+      status: pending
+    code:
+      status: pending
+    lab_instructions:
+      status: pending
+    notebook:
+      status: pending
+    dataset:
+      status: pending
+  week06:
+    slides:
+      status: pending
+    notes:
+      status: pending
+    code:
+      status: pending
+    lab_instructions:
+      status: pending
+    notebook:
+      status: pending
+    dataset:
+      status: published
+      url: https://snap.stanford.edu/data/CollegeMsg.html
+  week07:
+    slides:
+      status: pending
+    notes:
+      status: pending
+    code:
+      status: pending
+    lab_instructions:
+      status: pending
+    notebook:
+      status: pending
+    dataset:
+      status: pending
+  week08:
+    slides:
+      status: pending
+    notes:
+      status: pending
+    code:
+      status: pending
+    lab_instructions:
+      status: pending
+    notebook:
+      status: pending
+    dataset:
+      status: published
+      url: https://snap.stanford.edu/data/CollegeMsg.html
+  week09:
+    slides:
+      status: pending
+    notes:
+      status: pending
+    code:
+      status: pending
+    lab_instructions:
+      status: pending
+    notebook:
+      status: pending
+    dataset:
+      status: pending
+  week10:
+    slides:
+      status: pending
+    notes:
+      status: pending
+    code:
+      status: pending
+    lab_instructions:
+      status: pending
+    notebook:
+      status: pending
+    dataset:
+      status: published
+      url: https://pytorch-geometric.readthedocs.io/en/latest/generated/torch_geometric.datasets.Amazon.html
+  week11:
+    slides:
+      status: pending
+    notes:
+      status: pending
+    code:
+      status: pending
+    lab_instructions:
+      status: pending
+    notebook:
+      status: pending
+    dataset:
+      status: pending
+  week12:
+    slides:
+      status: pending
+    notes:
+      status: pending
+    code:
+      status: pending
+    lab_instructions:
+      status: pending
+    notebook:
+      status: pending
+    dataset:
+      status: published
+      url: https://pytorch-geometric.readthedocs.io/en/latest/generated/torch_geometric.datasets.Amazon.html
+  week13:
+    slides:
+      status: pending
+    notes:
+      status: pending
+    code:
+      status: pending
+    lab_instructions:
+      status: pending
+    notebook:
+      status: pending
+    dataset:
+      status: pending
+  week14:
+    slides:
+      status: pending
+    notes:
+      status: pending
+    code:
+      status: pending
+    lab_instructions:
+      status: pending
+    notebook:
+      status: pending
+    dataset:
+      status: published
+      url: https://grouplens.org/datasets/movielens/100k/
+  week15:
+    slides:
+      status: pending
+    notes:
+      status: pending
+    code:
+      status: pending
+    lab_instructions:
+      status: pending
+    notebook:
+      status: pending
+    dataset:
+      status: pending
+  week16:
+    slides:
+      status: pending
+    notes:
+      status: pending
+    code:
+      status: pending
+    lab_instructions:
+      status: pending
+    notebook:
+      status: pending
+    dataset:
+      status: pending

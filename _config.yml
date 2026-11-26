@@ -1,0 +1,93 @@
+title: 复杂网络分析与图机器学习
+tagline: 东南大学经济管理学院课程网站
+description: Network Analysis and Graph Machine Learning
+author: 东南大学经济管理学院
+theme: just-the-docs
+color_scheme: light
+url: ""
+baseurl: ""
+lang: zh-CN
+course_department: sem
+hide_sidebar_toggle: false
+favicon_ico: "/assets/images/favicon.svg"
+collections:
+  lectures:
+    output: true
+    sort_by: number
+    permalink: /lectures/:path/
+  labs:
+    output: true
+    sort_by: number
+    permalink: /labs/:path/
+  announcements:
+    output: false
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-include-cache
+defaults:
+  - scope:
+      path: ""
+      type: lectures
+    values:
+      layout: lecture
+      nav_exclude: false
+  - scope:
+      path: ""
+      type: labs
+    values:
+      layout: lab
+      nav_exclude: false
+  - scope:
+      path: ""
+      type: announcements
+    values:
+      layout: announcement
+      nav_exclude: true
+search_enabled: true
+heading_anchors: true
+permalink: pretty
+footer_content: true
+back_to_top: true
+back_to_top_text: "回到顶部"
+last_edit_timestamp: false
+sass:
+  style: compressed
+  sass_dir: _sass
+  quiet_deps: true
+  silence_deprecations: ["import"]
+callouts_level: quiet
+callouts:
+  highlight:
+    color: green
+  important:
+    title: 提醒
+    color: blue
+  note:
+    title: 说明
+    color: purple
+  warning:
+    title: 注意
+    color: red
+timezone: Asia/Shanghai
+future: true
+include:
+  - LICENSE
+  - robots.txt
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - vendor/
+  - README.md
+  - CONTRIBUTING.md
+  - tmp/
+  - script/
+  - spec/
+  - node_modules/
+  - package.json
+  - package-lock.json
+  - .devcontainer/
+  - .bundle/

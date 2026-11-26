@@ -1,0 +1,4 @@
+# 实验 Notebook
+
+此目录用于后续发布真实课程实验 Notebook。目前不放置空白或占位材料。
+发布后，在 _data/resources.yml 中填写实际路径并将状态设为 published。来源受限的数据应继续从官方页面获取。

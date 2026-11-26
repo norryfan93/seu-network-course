@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 150" role="img" aria-labelledby="title desc">
+<title id="title">课程知识路径</title><desc id="desc">网络数据经过结构分析、行为分析、图表示学习和图机器学习，进入商业应用。</desc>
+<rect width="980" height="150" fill="#fff"/>
+<g fill="#edf4f0" stroke="#00543D" stroke-width="2">
+<rect x="12" y="38" width="135" height="64" rx="3"/><rect x="176" y="38" width="135" height="64" rx="3"/><rect x="340" y="38" width="135" height="64" rx="3"/>
+<rect x="504" y="38" width="135" height="64" rx="3"/><rect x="668" y="38" width="135" height="64" rx="3"/><rect x="832" y="38" width="135" height="64" rx="3"/>
+</g><g fill="#173c30" font-family="Arial,sans-serif" font-size="17" text-anchor="middle">
+<text x="79" y="77">网络数据</text><text x="243" y="77">结构分析</text><text x="407" y="77">行为分析</text><text x="571" y="77">图表示学习</text><text x="735" y="77">图机器学习</text><text x="899" y="77">商业应用</text>
+</g><g stroke="#6c8d7f" stroke-width="2" fill="none"><path d="M148 70h25m-7-7 7 7-7 7M312 70h25m-7-7 7 7-7 7M476 70h25m-7-7 7 7-7 7M640 70h25m-7-7 7 7-7 7M804 70h25m-7-7 7 7-7 7"/></g></svg>

@@ -1,0 +1,15 @@
+{%- assign resource = include.resource -%}
+{%- assign label = include.label | default: "资源" -%}
+{%- if resource and resource.status == "published" and resource.url -%}
+  {%- assign external_prefix = resource.url | slice: 0, 4 -%}
+  {%- assign valid_resource = false -%}
+  {%- if external_prefix == "http" -%}{%- assign valid_resource = true -%}
+  {%- else -%}
+    {%- assign target_path = resource.url | remove_first: site.baseurl -%}
+    {%- for static_file in site.static_files -%}{%- if static_file.relative_path == target_path -%}{%- assign valid_resource = true -%}{%- endif -%}{%- endfor -%}
+  {%- endif -%}
+  {%- if valid_resource -%}
+    {%- if external_prefix == "http" -%}<a href="{{ resource.url }}" target="_blank" rel="noopener">{{ label }}</a>
+    {%- else -%}<a href="{{ resource.url | relative_url }}">{{ label }}</a>{%- endif -%}
+  {%- else -%}<span class="resource-unverified">{{ label }}：资源路径待核验</span>{%- endif -%}
+{%- else -%}<span class="resource-pending">{{ label }}：待发布</span>{%- endif -%}

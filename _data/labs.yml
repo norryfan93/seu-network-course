@@ -1,0 +1,286 @@
+labs:
+- number: 1
+  title: 网络构建与结构分析
+  weeks: 第 1—2 周
+  url_path: /labs/lab-01/
+  dataset_id: email-eu-core
+  tools:
+  - Pandas
+  - NetworkX
+  - Matplotlib
+  business_context: 机构希望了解邮件沟通网络的整体结构，识别沟通集中、断连或小团体现象。邮件元数据只用于结构分析，不推断正文或个人属性。
+  objectives:
+  - 将边表字段映射为节点、边和方向。
+  - 计算网络规模与基本结构指标。
+  - 把结果转成审慎的组织分析问题。
+  tasks:
+  - 读取边表并检查字段、重复记录与缺失值。
+  - 构建有向或无向网络并说明理由。
+  - 统计节点数、边数、度分布与网络密度。
+  - 计算聚类系数、连通分量和路径指标，并说明不连通图处理方式。
+  - 绘制网络图，控制标签与图例以避免拥挤。
+  - 用证据解释组织沟通结构，不把中心性直接等同于绩效。
+  deliverables:
+  - 网络统计表
+  - 带图例的网络图
+  - 一页以内的管理分析说明，含数据与指标局限
+  plan:
+  - 0–20 分钟：环境检查与数据审阅
+  - 20–55 分钟：边表读取、清洗与建图
+  - 55–105 分钟：规模、度、密度与聚类
+  - 105–140 分钟：连通分量、路径和可视化
+  - 140–170 分钟：结果解释与讨论
+  - 170–180 分钟：提交产出
+  dataset_note: SNAP 提供组织内部邮件关系边数据及部门标签；课程站只链接官方来源，不镜像数据。
+  duration_minutes: 180
+- number: 2
+  title: 网络模型与关键节点识别
+  weeks: 第 3—4 周
+  url_path: /labs/lab-02/
+  dataset_id: wiki-vote
+  tools:
+  - NetworkX
+  - Matplotlib
+  - Pandas
+  business_context: 平台运营团队需要比较网络形成机制，筛选具有触达、桥接或声望价值的节点。节点重要性取决于业务目标。
+  objectives:
+  - 区分 ER、WS、BA 三类生成机制。
+  - 计算并比较多种中心性排名。
+  - 解释不同指标排名分歧的业务含义。
+  tasks:
+  - 用固定随机种子生成 ER、WS、BA 网络并记录参数。
+  - 比较度分布、聚类和路径等结构指标。
+  - 绘制度分布并识别头部与长尾形态。
+  - 在 Wiki-Vote 上计算度中心性、中介中心性和 PageRank。
+  - 合并排名并检查差异较大的节点。
+  - 提出面向营销触达或组织协同的节点筛选原则。
+  deliverables:
+  - 模型参数和结构指标比较表
+  - 网络模型与度分布图
+  - 中心性排名表及商业解释
+  plan:
+  - 0–20 分钟：生成参数
+  - 20–65 分钟：ER、WS、BA 网络比较
+  - 65–110 分钟：度分布与异质性
+  - 110–155 分钟：中心性和 PageRank
+  - 155–175 分钟：排名差异与管理含义
+  - 175–180 分钟：提交检查
+  dataset_note: Wiki-Vote 为有向投票边表；不同方向的度含义不同，分析前应说明边方向。
+  duration_minutes: 180
+- number: 3
+  title: 社区发现与信息传播
+  weeks: 第 5—6 周
+  url_path: /labs/lab-03/
+  dataset_id: college-msg
+  tools:
+  - NetworkX
+  - Matplotlib
+  business_context: 品牌团队希望发现用户社群，并比较随机消费者或高连接消费者作为营销种子时的扩散范围。模拟结果是情景分析，不是效果承诺。
+  objectives:
+  - 使用 Louvain 或教师实现发现社区。
+  - 解释社区划分和模块度局限。
+  - 比较不同种子策略下 SIR 传播。
+  tasks:
+  - 在 Karate Club 小图检查社区算法输出。
+  - 在 CollegeMsg 子图运行传播模拟模板。
+  - 设定传播、恢复概率和随机种子，记录参数。
+  - 比较随机节点、高度节点或高中介节点作为种子。
+  - 比较感染曲线、最终覆盖与重复模拟波动。
+  - 讨论社群边界和传播概率对策略的影响。
+  deliverables:
+  - 社区网络图
+  - 传播曲线和参数表
+  - 种子策略对比与局限说明
+  plan:
+  - 0–20 分钟：社区和传播问题
+  - 20–55 分钟：Karate Club 社区划分
+  - 55–80 分钟：可视化与解释
+  - 80–125 分钟：多种种子 SIR 模拟
+  - 125–160 分钟：曲线与模拟波动
+  - 160–180 分钟：讨论并提交
+  dataset_note: CollegeMsg 是带时间戳的校园消息网络；只使用必要网络字段，不识别真实身份。
+  duration_minutes: 180
+- number: 4
+  title: 社交关系预测
+  weeks: 第 7—8 周
+  url_path: /labs/lab-04/
+  dataset_id: college-msg
+  tools:
+  - NetworkX
+  - Pandas
+  - Scikit-learn
+  business_context: 平台希望根据历史交往提出潜在好友或合作对象。实验按时间切分，避免将未来网络结构提前提供给模型。
+  objectives:
+  - 按时间构造历史网络与未来关系。
+  - 形成正负样本并说明抽样方法。
+  - 比较启发式链路预测并解释 AUC。
+  tasks:
+  - 解析互动时间戳并定义训练截止时间。
+  - 仅用截止前数据构造历史网络。
+  - 以之后出现的边构造正样本，从未连边候选抽取负样本。
+  - 计算 Common Neighbors、Jaccard 和 Adamic–Adar。
+  - 计算 ROC-AUC 与 Precision@K，说明负样本抽样影响。
+  - 检查跨划分边与未来信息泄漏。
+  - 讨论推荐价值及可能的曝光偏差。
+  deliverables:
+  - 时间划分和样本构造说明
+  - 算法比较表与 ROC 曲线
+  - 含泄漏检查的结论
+  plan:
+  - 0–25 分钟：目标和时间戳
+  - 25–65 分钟：训练网与候选样本
+  - 65–115 分钟：相似性分数
+  - 115–150 分钟：AUC 与 Precision@K
+  - 150–170 分钟：泄漏审查
+  - 170–180 分钟：提交
+  dataset_note: CollegeMsg 按时间切分；数据下载和再分发遵循 SNAP 页面说明。
+  duration_minutes: 180
+- number: 5
+  title: 节点嵌入与节点分类
+  weeks: 第 9—10 周
+  url_path: /labs/lab-05/
+  dataset_id: amazon-computers
+  tools:
+  - NetworkX
+  - node2vec
+  - Scikit-learn
+  - Pandas
+  business_context: 电商团队希望用商品共购关系辅助商品类别识别。节点嵌入将网络邻域压缩为向量，再与分类器组合。
+  objectives:
+  - 理解商品节点、共购边、特征和类别。
+  - 运行 node2vec 教师模板并理解随机游走参数。
+  - 比较网络表示与传统基线。
+  tasks:
+  - 加载 Amazon Computers 教学子集，检查图、特征和标签对应关系。
+  - 固定随机种子运行 node2vec 或使用教师提供的嵌入。
+  - 使用 PCA 或 t-SNE 投影，并谨慎解释图形。
+  - 用逻辑回归训练嵌入分类器。
+  - 与类别先验或网络统计特征基线比较。
+  - 说明全图嵌入与训练/测试划分的泄漏风险。
+  deliverables:
+  - 嵌入可视化
+  - 分类基线比较表
+  - 参数、随机种子和管理解释
+  plan:
+  - 0–20 分钟：字段与任务
+  - 20–55 分钟：加载图与子集
+  - 55–100 分钟：node2vec 或嵌入
+  - 100–135 分钟：分类和基线
+  - 135–165 分钟：可视化与泄漏讨论
+  - 165–180 分钟：提交
+  dataset_note: Amazon Computers 是 PyG 文档中的商品共购图；可使用教师注明抽样规则的固定子集，网站不再分发原始数据。
+  duration_minutes: 180
+- number: 6
+  title: 图神经网络与模型比较
+  weeks: 第 11—12 周
+  url_path: /labs/lab-06/
+  dataset_id: amazon-computers
+  tools:
+  - PyTorch
+  - PyTorch Geometric
+  - Scikit-learn
+  business_context: 商品分类任务中，团队要判断邻居聚合是否比仅用商品自身特征更有帮助，关注公平比较和过拟合。
+  objectives:
+  - 理解 GCN 与 GraphSAGE 邻居聚合。
+  - 使用教师代码模板运行基础模型。
+  - 用相同划分比较 MLP 并识别过拟合。
+  tasks:
+  - 读取统一训练、验证和测试划分。
+  - 运行 MLP 非图基线和教师 GCN 模板。
+  - 环境允许时运行 GraphSAGE，GAT 为选做。
+  - 记录损失和验证指标并绘制训练曲线。
+  - 比较 Accuracy、Macro-F1 等适合的指标。
+  - 检查标签、边或特征中是否泄漏未来信息。
+  - 讨论图结构提升是否稳定且有管理意义。
+  deliverables:
+  - 模型划分和参数记录
+  - MLP、GCN、GraphSAGE 结果表
+  - 训练曲线和过拟合/泄漏分析
+  plan:
+  - 0–20 分钟：比较原则与划分
+  - 20–55 分钟：MLP 基线
+  - 55–105 分钟：GCN 模板
+  - 105–140 分钟：GraphSAGE 或教师结果
+  - 140–165 分钟：指标和过拟合
+  - 165–180 分钟：提交审查表
+  dataset_note: PyG Amazon Computers 可用于小规模教学比较；不要求从零编写 GNN 底层代码。
+  duration_minutes: 180
+- number: 7
+  title: 图推荐系统
+  weeks: 第 13—14 周
+  url_path: /labs/lab-07/
+  dataset_id: movielens-100k
+  tools:
+  - Pandas
+  - NetworkX
+  - Scikit-learn
+  business_context: 平台希望从用户—物品交互生成个性化候选，同时避免热门推荐掩盖长尾需求。
+  objectives:
+  - 构造用户—物品二部图。
+  - 实现热门、协同过滤与邻居推荐基线。
+  - 使用明确切分比较 Recall@K 和 NDCG@K。
+  tasks:
+  - 读取 MovieLens 评分及时间字段。
+  - 按时间或用户留出构造划分并记录规则。
+  - 只用训练交互构建二部图。
+  - 实现热门物品与基础协同过滤。
+  - 基于邻居关系推荐候选并剔除已交互物品。
+  - 计算 Recall@K、NDCG@K 并说明候选集定义。
+  - LightGCN 作为拓展，不要求基本训练。
+  deliverables:
+  - 数据划分说明和推荐列表样例
+  - 基线指标比较表
+  - 含长尾和局限的管理解释
+  plan:
+  - 0–20 分钟：推荐和指标定义
+  - 20–55 分钟：数据与划分
+  - 55–100 分钟：二部图和热门基线
+  - 100–140 分钟：协同过滤和图邻居
+  - 140–165 分钟：Recall 与 NDCG
+  - 165–180 分钟：泄漏检查提交
+  dataset_note: MovieLens 100K 来自 GroupLens；请阅读官方数据页和下载包 README，课程站只链接来源。
+  duration_minutes: 180
+- number: 8
+  title: 综合商业网络分析项目
+  weeks: 第 15—16 周
+  url_path: /labs/lab-08/
+  dataset_id: student-selected
+  tools:
+  - Python
+  - NetworkX
+  - Scikit-learn
+  - 按项目选择
+  business_context: 小组以可回答的商业问题为起点，建立可复现分析流程，报告证据、解释和边界。
+  objectives:
+  - 说明研究问题、数据来源和关系定义。
+  - 选择与问题匹配的网络方法或图机器学习基线。
+  - 形成可复现材料并进行清晰展示。
+  tasks:
+  - 提出明确且适合经管分析的商业问题。
+  - 记录数据来源、字段、许可和网络构建规则。
+  - 选择基线与合适的网络方法；不强制使用 GNN。
+  - 展示结果并解释业务含义，报告不确定性与局限。
+  - 提交报告、展示 PPT 和可复现分析代码。
+  - 展示并复现至少一位同学的关键结果。
+  deliverables:
+  - 项目报告
+  - 小组展示 PPT
+  - 可复现代码、环境说明和数据来源记录
+  plan:
+  - 0–25 分钟：展示规则与问题确认
+  - 25–70 分钟：小组展示一
+  - 70–115 分钟：小组展示二
+  - 115–145 分钟：同伴提问与复现
+  - 145–170 分钟：课程回顾
+  - 170–180 分钟：确认提交材料
+  dataset_note: 可自主选择公开且允许课堂研究的数据，或使用教师指定数据；记录来源与限制，不公开受限数据。
+  duration_minutes: 180
+schedule_weeks:
+- 2
+- 4
+- 6
+- 8
+- 10
+- 12
+- 14
+- 16

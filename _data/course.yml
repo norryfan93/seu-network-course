@@ -1,0 +1,104 @@
+name: 复杂网络分析与图机器学习
+name_en: Network Analysis and Graph Machine Learning
+unit: 东南大学经济管理学院
+unit_en: School of Economics and Management, Southeast University
+department: 电子商务系
+instructor: 樊一凡
+instructor_en: Yifan Fan
+audience: 经济管理类本科生
+semester: 待公布
+course_code: 待公布
+course_number: 待公布
+teaching_time: 待公布
+classroom: 待公布
+email: 待公布
+homepage: ''
+office_hours: 待公布
+period_weeks: 16
+total_hours: 64
+lecture_hours: 32
+lab_hours: 32
+minutes_per_hour: 45
+lecture_minutes: 90
+lab_minutes: 180
+lab_frequency: 每两周集中一次，共 8 次
+introduction: 在数字经济环境中，消费者、企业、商品和平台之间形成了复杂的关系网络。传统数据分析方法主要关注个体及其属性，而网络分析与图机器学习进一步利用个体之间的关联信息，帮助理解数字商业系统的结构、行为与演化。
+positioning: 本课程面向经济管理类本科生，介绍复杂网络的基本概念、经典网络分析算法以及图机器学习方法。课程结合社交媒体、电子商务、组织管理、金融交易和推荐系统等应用场景，通过理论讲授与
+  Python 实验，培养学生利用网络数据分析商业问题的能力。课程强调方法理解、数据分析与商业应用，不要求学生具备高级数学或深度学习模型开发经验。
+objectives:
+- 将实际商业问题转化为网络分析问题。
+- 使用 Python 构建和可视化关系网络。
+- 计算并解释网络结构、中心性和社区特征。
+- 理解网络传播机制及其商业应用。
+- 使用传统图算法进行关系预测。
+- 理解节点嵌入和图神经网络的基本原理。
+- 使用图机器学习方法解决分类与推荐问题。
+- 评价模型表现并解释其管理含义。
+prerequisites:
+- Python 程序设计基础
+- 基础概率与统计学
+- 基础线性代数
+prerequisite_note: 不要求提前学习深度学习、PyTorch 或图神经网络。
+modules:
+- code: I
+  name: 网络科学基础
+  weeks: 第 1—4 周
+  lecture_hours: 8
+  lab_hours: 8
+  summary: 认识关系数据、网络结构、经典网络模型与重要节点。
+- code: II
+  name: 网络结构与行为分析
+  weeks: 第 5—8 周
+  lecture_hours: 8
+  lab_hours: 8
+  summary: 分析社区、传播与关系形成，并建立可靠的评估意识。
+- code: III
+  name: 图机器学习
+  weeks: 第 9—12 周
+  lecture_hours: 8
+  lab_hours: 8
+  summary: 从节点嵌入过渡到图神经网络，关注预测任务和验证设计。
+- code: IV
+  name: 商业应用与综合实践
+  weeks: 第 13—16 周
+  lecture_hours: 8
+  lab_hours: 8
+  summary: 将图方法用于知识组织、推荐与风险分析，并完成课程项目。
+grading:
+- name: 课堂参与
+  weight: 10
+  status: 暂定
+  detail: 围绕课堂讨论、案例分析与学习活动。
+- name: 实验报告
+  weight: 40
+  status: 暂定
+  detail: 完成实验任务，提交代码、结果和简要解释。
+- name: 理论考核
+  weight: 20
+  status: 暂定
+  detail: 考查核心概念、方法理解和应用判断。
+- name: 综合课程项目
+  weight: 30
+  status: 暂定
+  detail: 小组项目，提交报告、展示材料和可复现代码。
+project_team_size: 建议 3—4 人一组
+project_start_week: 8
+project_coaching_week: 15
+project_showcase_week: 16
+project_rubric:
+- name: 商业问题与研究设计
+  weight: 20
+- name: 数据处理与网络构建
+  weight: 20
+- name: 方法选择与实验过程
+  weight: 25
+- name: 结果解释与管理启示
+  weight: 25
+- name: 展示与可复现性
+  weight: 10
+policy_note: 考核方式、具体截止日期和提交平台仍待教师确认；以上比例为可调整的暂定方案。
+research_fields:
+- 信息系统
+- 人工智能
+- 区块链
+- 数字平台
