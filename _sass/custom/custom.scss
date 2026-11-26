@@ -87,8 +87,8 @@ a:hover { color: #000; }
   .main-content { font-size: 1rem; }
   .course-meta-table th { width: 34%; }
   .course-figure { margin-left: 0; margin-right: 0; }
-  .instructor-card { grid-template-columns: minmax(0, 1fr); }
-  .instructor-photo-frame { width: 100%; max-width: 360px; margin: 0 auto; }
+  .instructor-card { width: calc(100vw - 2rem); max-width: calc(100vw - 2rem); box-sizing: border-box; grid-template-columns: minmax(0, 1fr); }
+  .instructor-photo-frame { width: 100%; max-width: 300px; margin: 0 auto; }
   .instructor-details { min-width: 0; padding: .2rem .1rem; }
   .instructor-details p { overflow-wrap: anywhere; }
   .instructor-homepage { max-width: 100%; flex-wrap: wrap; }
