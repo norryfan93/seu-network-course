@@ -5,14 +5,16 @@ unit_en: School of Economics and Management, Southeast University
 department: 电子商务系
 instructor: 樊一凡
 instructor_en: Yifan Fan
+instructor_title: 副研究员
+office_location: 经管楼 A408
 audience: 经济管理类本科生
 semester: 待公布
 course_code: 待公布
 course_number: 待公布
 teaching_time: 待公布
 classroom: 待公布
-email: 待公布
-homepage: ''
+email: norryfan@seu.edu.cn
+homepage: https://em.seu.edu.cn/fyf/list.htm
 office_hours: 待公布
 period_weeks: 16
 total_hours: 64
@@ -98,7 +100,5 @@ project_rubric:
   weight: 10
 policy_note: 考核方式、具体截止日期和提交平台仍待教师确认；以上比例为可调整的暂定方案。
 research_fields:
-- 信息系统
-- 人工智能
-- 区块链
-- 数字平台
+- 区块链与 Web3 平台中的用户行为
+- 数字资产治理
