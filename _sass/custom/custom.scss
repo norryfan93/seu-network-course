@@ -25,7 +25,7 @@ a:hover { color: #000; }
 .resource-list { padding-left: 1.2rem; }
 .resource-list li, .task-list li { margin: .35rem 0; }
 .course-figure { margin: 1.2rem auto; max-width: 760px; }
-.course-figure img { display: block; width: 100%; height: auto; filter: grayscale(1); }
+.course-figure img { display: block; width: 100%; height: auto; }
 .license-note { color: #555; font-size: .92rem; }
 .seu-course-hero {
   --seu-green: #222;
@@ -42,7 +42,6 @@ a:hover { color: #000; }
 .seu-course-brand { display: flex; align-items: center; gap: 1rem; }
 .seu-course-brand a { display: inline-flex; padding: .42rem .55rem; border-radius: 8px; background: #fff; box-shadow: 0 2px 9px rgba(0, 0, 0, .09); line-height: 0; }
 .seu-course-brand img { display: block; width: clamp(220px, 34vw, 310px); height: auto; }
-.seu-course-brand img, .seu-course-motto img, .seu-course-hall { filter: grayscale(1); }
 .seu-course-brand span { border-left: 1px solid #ccc; padding-left: 1rem; color: #444; font-size: .84rem; line-height: 1.55; letter-spacing: .03em; }
 .seu-course-hero-main { display: grid; grid-template-columns: minmax(0, 1fr) 165px; align-items: center; gap: 1.25rem; padding: 1.45rem 0 1.2rem; }
 .seu-course-eyebrow, .instructor-eyebrow { margin: 0 0 .45rem; color: #555; font-size: .72rem; font-weight: 700; letter-spacing: .14em; }
