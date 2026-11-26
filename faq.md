@@ -7,20 +7,11 @@ permalink: /faq/
 
 # 常见问题
 
-## 没有学习过深度学习，可以选修本课程吗？
-可以。课程从网络数据和经典网络分析开始，GNN 以概念、示意和现成工具使用为主，不要求先修深度学习。
-
 ## Python 基础较弱，应该如何准备？
 建议复习变量、列表、字典、函数、文件读取和 Pandas 基础。实验会围绕数据读取、NetworkX 操作和结果解释逐步开展。
 
-## 是否需要购买 GPU 或高性能计算机？
-不需要。基础实验以 CPU 和小规模教学数据为目标；不要求购买 GPU、付费软件或 API。
-
 ## 实验需要安装哪些软件？
 以 Python、Jupyter、Pandas、NetworkX、Matplotlib 和 Scikit-learn 为主。PyTorch 与 PyTorch Geometric 仅用于后续基础 GNN 实验。
-
-## 是否可以使用 Google Colab 或其他 Notebook 环境？
-原则上可以使用能运行 Python Notebook 的环境；数据隐私、保存和提交仍需遵守教师说明。
 
 ## 是否必须阅读全部英文论文？
 不需要。每周提供少量建议阅读；论文主要为拓展材料，可优先读摘要、图示和结论。
